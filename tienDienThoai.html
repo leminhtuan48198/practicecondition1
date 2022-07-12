@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tien dien thoai</title>
+</head>
+<body>
+<script>
+    let thoiGian=prompt('Nhap so phut goi')
+    let tien
+    if (thoiGian<=50) {
+        tien=25000+600*thoiGian
+    }else if(thoiGian<=200) {
+        tien = 25000 + 400 * (thoiGian-50) + 50*600
+    }else {
+        tien = 25000 + 400*150 + 50 * 600+200*(thoiGian-200)
+    }
+    alert('tong tien phai thanh toan la'+tien)
+
+</script>
+</body>
+</html>

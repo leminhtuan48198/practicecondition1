@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hoahong</title>
+</head>
+<body>
+<script>
+    let doanhSo=prompt("nhap doanh so ban hang")
+    let phanTram
+    if (doanhSo<5) {
+        phanTram=0.01
+    } else if (doanhSo<10) {
+        phanTram=0.02
+    }else if (doanhSo<15) {
+        phanTram=0.04
+    }else if (doanhSo<20) {
+        phanTram=0.06
+    }else {
+        phanTram=0.1
+    }
+    let tien=doanhSo*phanTram
+    alert('So tien nhan duoc la '+tien)
+</script>
+</body>
+</html>
